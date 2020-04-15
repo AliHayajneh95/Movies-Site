@@ -21,5 +21,3 @@ function myFunction() {
       "Hello " + person + "! How are you today?";
     }
   }
-
-window.prompt("enter your age", "man you are so old, deal with it");
