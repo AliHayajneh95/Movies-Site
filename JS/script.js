@@ -1,5 +1,10 @@
 'use strict'
-window.prompt("enter your age", "man you are so old, deal with it");
+var x;
+while(isNaN(x))
+{
+    x = window.prompt("enter your year of birth, must be a nubmer", "man you are so old, deal with it");
+}
+calculateAge();
 var a = prompt('1+1 = ?');
 var a2 = prompt('What is your favorite movie?');
 var a3 = prompt('Type your 1st, 2nd, 3rd name');
@@ -13,6 +18,13 @@ else {
 document.write('<p id="a2">'+res+'</p>');
 document.write('<p id="a2">'+a2+'</p>');
 document.write('<p id="a3">'+a3+'</p>');
+
+function calculateAge()
+{
+    var y = new Date().getFullYear();
+    var age = (y - x);
+    alert(age);
+}
 
 function myFunction() {
     var person = prompt("Please enter your name", "");
