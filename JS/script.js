@@ -37,11 +37,11 @@ function myFunction() {
 
 
   var elements = [document.createElement("a"), document.createElement("a"), document.createElement("a")];
-  elements[0].href = "https://www.imdb.com/title/tt0298130/ ";
+  elements[0].href = "https://www.imdb.com/title/tt0298130";
   elements[0].text = "The ring ";
-  elements[1].href = "https://www.imdb.com/title/tt0365748/ ";
+  elements[1].href = "https://www.imdb.com/title/tt0365748";
   elements[1].text = "Shaun of the Dead ";
-  elements[2].href = "https://www.imdb.com/title/tt1396484/ ";
+  elements[2].href = "https://www.imdb.com/title/tt1396484";
   elements[2].text = "It ";
 
   for (i >= 0; i--;)
@@ -49,6 +49,11 @@ function myFunction() {
     /*var element = document.createElement("a");
     element.href = "https://www.google.com"; //arr[1, i];
     element.text = "google ";//arr[0, i];*/
+    if(i >= elements.length)
+    {
+        document.body.innerHTML = document.body.innerHTML + (elements[0]);
+        continue;
+    }
     document.body.innerHTML = document.body.innerHTML + (elements[i]);
 
   }
